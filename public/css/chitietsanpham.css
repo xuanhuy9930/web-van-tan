@@ -1,0 +1,148 @@
+*{
+      margin: 0;
+      padding: 0;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+     
+}
+img{
+      max-width: 100%;
+      height: auto;
+      -o-object-fit: cover;
+         object-fit: cover;
+      background-size: cover;
+      background-position: center; 
+}
+.title{
+	text-align: center;
+    visibility: visible;
+    animation-duration: 2s;
+    animation-name: bounceInDown;
+    font-size: 35px;
+    font-style: italic;
+}
+.img-sanpham1{
+	margin-top: 10%;
+	box-shadow: 5px 8px 8px grey;
+	transition: 1.5s;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+.img-sanpham1:hover{
+	transform: rotate3d(10, 0, 5, 360deg);
+}
+.sub-title-left{
+	text-align: justify;
+  margin-left: 3%;
+  font-size: 20px;
+}
+.tt-sp{
+		font-size: 28px;
+    font-weight: 700;
+}
+.sub-title-thongtin-chitiet{
+	text-align: justify;
+	margin-bottom: 0;
+	font-style: italic;
+	font-size: 20px;
+}
+.thongtin-chitiet::before {
+	content: "\2022";
+	color: red;
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: 1em;
+
+}
+.title-spct{
+	position: relative;
+	margin-top: 5%;
+    
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.title-spct:after{
+	content: "";
+    display: block;
+    width: 14%;
+    border: 2px solid #5f372b;
+    position: absolute;
+    left: 43%;
+}
+.img-tt-1{
+   padding-left: 10px;
+    padding-right: 10px;
+}
+.product-item{
+   background: #fff none repeat scroll 0 0;
+    border: 1px solid #f1f1f1;
+    border-radius: 3px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.product-item:hover{
+   box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+.product-img a{
+   color: #444;
+    text-decoration: none;
+    transition: .5s all ease;
+}
+.product-img img{
+   height: 160px;
+    width: 100%;
+    max-width: 100%;
+}
+.product-mega {
+    margin-top: 5px;
+}
+.product-mega h3{
+   font-size: 16px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: keep-all;
+    font-weight: 300;
+}
+.product-mega a{
+   color: #444;
+    text-decoration: none;
+    transition: .5s all ease;
+    font-weight: 700;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	.img-sanpham1{
+		margin-top: 50%;
+	}
+}
+@media only screen and (min-width: 426px) and (max-width: 767px){
+	.title{
+		margin-left: 0 !important;
+		    font-size: 15px;
+    text-align: center;
+	}
+	.main{
+		padding: 0;
+	}
+	.title-left{
+		padding:0;
+	}
+}
+@media only screen  and (max-width: 425px){
+	.title{
+		font-size: 12px;
+		text-align: center;
+		margin-left: 0!important;
+	}
+	.main{
+		padding: 0;
+	}
+	.title-left{
+		padding:0;
+	}
+}
